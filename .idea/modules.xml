@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ReactBook.iml" filepath="$PROJECT_DIR$/.idea/ReactBook.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mallapi.main.iml" filepath="$PROJECT_DIR$/.idea/modules/mallapi.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mallapi.test.iml" filepath="$PROJECT_DIR$/.idea/modules/mallapi.test.iml" />
     </modules>
   </component>
 </project>
