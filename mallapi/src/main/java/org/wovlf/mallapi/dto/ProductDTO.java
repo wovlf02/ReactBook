@@ -1,23 +1,23 @@
 package org.wovlf.mallapi.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import java.util.*;
 import org.springframework.web.multipart.MultipartFile;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class ProductDTO {
+
     private Long pno;
+
     private String pname;
+
     private int price;
+
     private String pdesc;
+
     private boolean delFlag;
 
     @Builder.Default
@@ -25,4 +25,5 @@ public class ProductDTO {
 
     @Builder.Default
     private List<String> uploadFileNames = new ArrayList<>();
+
 }
