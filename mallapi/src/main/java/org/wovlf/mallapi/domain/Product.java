@@ -18,10 +18,20 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long pno;
+
     private String pname;
+
     private int price;
+
     private String pdesc;
+
     private boolean delFlag;
+
+
+    public void changeDel(boolean delFlag) {
+        this.delFlag = delFlag;
+    }
+
 
     @ElementCollection
     @Builder.Default
@@ -31,24 +41,27 @@ public class Product {
         this.price = price;
     }
 
-    public void changeDesc(String desc) {
+    public void changeDesc(String desc){
         this.pdesc = desc;
     }
 
-    public void changeName(String name) {
+    public void changeName(String name){
         this.pname = name;
     }
 
     public void addImage(ProductImage image) {
+
         image.setOrd(this.imageList.size());
         imageList.add(image);
     }
 
-    public void addImageString(String fileName) {
+    public void addImageString(String fileName){
+
         ProductImage productImage = ProductImage.builder()
                 .fileName(fileName)
                 .build();
         addImage(productImage);
+
     }
 
     public void clearList() {

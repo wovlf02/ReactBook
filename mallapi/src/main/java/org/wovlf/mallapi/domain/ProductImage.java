@@ -12,13 +12,11 @@ import lombok.*;
 public class ProductImage {
 
     private String fileName;
-    private int ord;
-    private boolean delFlag;
 
-    public void changeDel(boolean delFlag) {
-        this.delFlag = delFlag;
-    }
-    public void setOrd(int ord) {
+    private int ord;
+
+    public void setOrd(int ord){
         this.ord = ord;
     }
+
 }
